@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Food Packaging</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="status-title">Scanning...</h1>
+        <img id="status-icon" src="images/loading.gif" alt="Loading">
+
+        <p id="message">Checking food freshness...</p>
+        <button id="more-info-btn" onclick="showMoreInfo()">More Details</button>
+        
+        <div id="info-section" style="display: none;">
+            <h2>Storage & Safety Tips</h2>
+            <ul id="tips-list">
+                <!-- Tips will be added dynamically -->
+            </ul>
+            <p><strong>Estimated Shelf-Life:</strong> <span id="shelf-life"></span> days</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
